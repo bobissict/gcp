@@ -1,0 +1,21 @@
+header {
+  position: absolute;
+  top: 45px;
+  left: 30px;
+
+  img {
+    max-width: 155px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

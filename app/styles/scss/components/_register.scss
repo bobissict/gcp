@@ -1,0 +1,73 @@
+.register {
+  padding: 0 30px 110px;
+
+  h3 {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 37px;
+    color: black;
+    letter-spacing: -1.49px;
+    position: relative;
+    margin-bottom: 40px;
+
+    &:before {
+      position: absolute;
+      content: '';
+      left: -30px;
+      top: 18px;
+      background: black;
+      height: 4px;
+      width: 20px;
+    }
+  }
+
+  form {
+    max-width: 525px;
+    margin: 0 auto;
+
+    > div {
+      margin-bottom: 20px;
+
+      label {
+        font-weight: 500;
+        letter-spacing: 0.11px;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 15px;
+        margin-left: 15px;
+      }
+
+      input[type=email],
+      input[type=number],
+      input[type=text] {
+        font-family: 'Gotham HTF';
+        line-height: 60px;
+        font-size: 18px;
+        letter-spacing: -0.58px;
+        display: block;
+        width: 100%;
+        border: 1px solid $lighter-gray;
+        box-sizing: border-box;
+        border-radius: 3px;
+        padding: 0 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .register {
+    padding: 0 100px 110px;
+    h3 {
+      font-size: 46px;
+      line-height: 50px;
+
+      &:before {
+        left: -100px;
+        top: 20px;
+        width: 70px;
+      }
+    }
+  }
+}

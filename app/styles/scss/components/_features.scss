@@ -1,0 +1,89 @@
+.features-list {
+  display: flex;
+  margin-top: -120px;
+  flex-direction: column;
+  padding: 20px;
+
+  .features-list-item {
+    background: $light-gray;
+    background-size: cover;
+    height: 372px;
+    overflow: hidden;
+    flex-grow: 1;
+    position: relative;
+    margin-bottom: 30px;
+
+    h2 {
+      font-size: 34px;
+      line-height: 37px;
+      letter-spacing: -1.1px;
+      padding: 50px 0 0 50px;
+      box-sizing: border-box;
+
+      span {
+        font-weight: 500;
+        display: block;
+      }
+    }
+
+    figcaption {
+      position: absolute;
+      bottom: -372px;
+      background: $primary-color;
+      color: white;
+      line-height: 28px;
+      height: 372px;
+      position: relative;
+      transition: bottom linear 0.2s;
+      padding: 30px 50px;
+
+      &:before {
+        position: absolute;
+        content: '';
+        top: -100px;
+        left: -50px;
+        width: 0;
+        height: 0;
+        border-bottom: 100px solid $primary-color;
+        border-right: 100px solid transparent;
+      }
+    }
+
+    &:hover figcaption {
+      bottom: -20px;
+    }
+
+    &:nth-child(1) {
+      background-image: url('../images/bg-privateequity.jpg');
+    }
+
+    &:nth-child(2) {
+      background-image: url('../images/bg-hedgefund.jpg');
+
+      h2 {
+        color: white;
+      }
+    }
+
+    &:nth-child(3) {
+      background-image: url('../images/bg-realestate.jpg');
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .features-list {
+    flex-direction: row;
+    padding: 0px;
+    .features-list-item {
+      &:nth-child(2) {
+        margin-top: 60px;
+      }
+
+      &:nth-child(3) {
+        margin-top: 120px;
+      }
+    }
+  }
+}
