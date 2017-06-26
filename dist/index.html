@@ -52,27 +52,32 @@
     <section class="register">
         <div class="container">
             <h3>Register your <br/> interest.</h3>
-            <form>
+            <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyNCzsHxke5WTIzYVoj8tXWNDqxAzin_6lh77O5yIz2MdBwXjx2/exec">
                 <div>
                     <label>Full Name</label>
-                    <input type="text" placeholder="eg. Dave Smith" />
+                    <input type="text" placeholder="eg. Dave Smith" name="name" />
                 </div>
                 <div>
                     <label>Email</label>
-                    <input type="email" placeholder="eg. dave@email.com" />
+                    <input type="email" placeholder="eg. dave@email.com" name="email" />
                 </div>
                 <div>
                     <label>Phone</label>
-                    <input type="number" placeholder="eg. 084 666 6666" />
+                    <input type="number" placeholder="eg. 084 666 6666" name="phone" />
                 </div>
-                <button class="btn-primary full-width">Submit</button>
+                <button id="submit-button" class="btn-primary full-width">Submit</button>
             </form>
+            <div style="display:none;" id="thankyou_message">
+              <h2><em>Thanks</em> for contacting us!
+                We will get back to you soon!</h2>
+            </div>
         </div>
     </section>
     <footer>
         <p>Greyhound Capital Partners (Pty) Ltd is a private company incorporated under the laws of South Africa with registration number 2016/204126/07.</p>
         <p>These materials do not constitute, or form a part of, and should not be construed as, an advertisement, invitation, solicitation and/or offer to sell, issue, purchase or subscribe for, any Securities in South Africa.</p>
     </footer>
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
